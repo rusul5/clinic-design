@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.header-content{
+    overflow: hidden;
+}
+.header .logo{
+    width: 40%;
+    height: 60px;
+    float: left;
+}
+.container{
+    width: 80%;
+    height:20px;
+    margin: auto;
+}
+.header{
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.s-header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.s-header .s-title{
+    font-size: 30px;
+    padding-top: 40px;   
+}
+.s-header .line{
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: purple;
+    margin:0 auto 60px auto;
+}
+.header .nav{
+    width: 60%;
+    list-style: none;
+    float: left;
+    text-align: right;
+}
+.header .nav li{
+    display:inline-block;
+}
+.header .nav li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 25px 23px;
+    display: block;
+}
+.header .nav li a.active:after,
+.header .nav li a:after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color:purple;
+    transition: width 0.5s;
+}
+.header .nav li a.active:after{width: 100%;}
+.header .nav li a:after{width: 0;}
+.header .nav li a:hover:after{width: 100%;}
+.home{
+    height: 100vh;
+    position: relative;
+    background-image: url("../cover/9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+.home-lay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0,0.5);
+}
+.home .title{
+color: rgb(255, 255, 255);
+}
+.home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.home-content h1{
+    font-size: 50px;
+    font-style: oblique;
+}
+.s1{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    padding:20px;
+    justify-content: center;
+    position: relative;
+}
+.botox{
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+.filler{
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+.smyle{
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+.botox img{
+    width: 100%;
+    height: 100%;
+}
+.filler img{
+    width: 100%;
+    height: 100%;
+}
+.smyle img{
+    width: 100%;
+    height: 100%;
+}
+.s2{
+    overflow: hidden;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    padding:20px;
+    justify-content: center;
+    position: relative;
+}
+.mizohair{
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+.health{
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative; 
+}
+.nose{
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+.mizohair img{
+    width: 100%;
+    height: 100%;
+}
+.health img{
+    width: 100%;
+    height: 100%;
+}
+.nose img{
+    width: 100%;
+    height: 100%;
+}
+.botox .bo-lay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(45, 3, 51, 0.5);
+    text-align: center;
+    text-justify: newspaper;
+    padding: 15px;
+}
+.filler .fi-lay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(45, 3, 51, 0.5) ;
+    text-align: center;
+    text-justify: newspaper;
+    padding: 15px;
+}
+.health .he-lay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(45, 3, 51, 0.5) ;
+    text-align: center;
+    text-justify: newspaper;
+    padding: 15px;
+}
+.smyle .sm-lay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(45, 3, 51, 0.5) ;
+    text-align: center;
+    text-justify: newspaper;
+    padding: 15px;
+}
+.nose .no-lay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(45, 3, 51, 0.5) ;
+    text-align: center;
+    text-justify: newspaper;
+    padding: 15px;
+}
+.mizohair .mi-lay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(45, 3, 51, 0.5) ;
+    text-align: center;
+    text-justify: newspaper;
+    padding: 5px;
+    padding: 15px;
+}
+.b1{
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    padding:20px;
+    justify-content: center;
+}
+.b-1{
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+       
+}
+.b-1 img{
+    width: 100%;
+    height: 100%;
+}
+.b-2{
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+.b-2 img{
+    width: 100%;
+    height: 100%;
+}
+.b-3{
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+.b-3 img{
+    width: 100%;
+    height: 100%;
+}
